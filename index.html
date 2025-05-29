@@ -44,7 +44,7 @@ function filterExpenses() {
     label.type = "text";
     label.value = item.label;
     label.placeholder = "Bijv. huur";
-    label.className = "w-[65%] p-1 border rounded";
+    label.className = "w-[70%] p-1 border rounded";
     label.oninput = () => {
       item.label = label.value;
       saveData(); updateLastModified();
@@ -54,7 +54,7 @@ function filterExpenses() {
     const amount = document.createElement("input");
     amount.type = "number";
     amount.value = item.bedrag;
-    amount.className = "w-[35%] p-1 border rounded text-right";
+    amount.className = "w-[30%] p-1 border rounded text-right";
     amount.oninput = () => {
       const nieuweWaarde = parseFloat(amount.value) || 0;
       if (!item.checked) {
